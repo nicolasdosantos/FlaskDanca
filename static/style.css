@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+img {
+    max-width: 100%;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* ------------------------------------- HEADER --------------------------------- */
+
+header {
+    background-image: url("/static/imagem.svg");
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    color: white;
+    font-family: 'Grandstander', cursive;
+}
+
+header h3 {
+    font-family: 'Grandstander', cursive;
+    font-size: 100px;
+}
+
+#nav {
+    display: flex;
+    text-align: center;
+    padding: 10px;
+}
+
+#nav button {
+    font-size: 18px;
+    color: rgb(95, 95, 95);
+    font-family: inherit;
+    font-weight: 800;
+    cursor: pointer;
+    position: relative;
+    border: none;
+    background: none;
+    text-transform: uppercase;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: color;
+}
+
+#nav button:focus,
+#nav button:hover {
+    color: white;
+}
+
+#nav button:focus:after,
+#nav button:hover:after {
+    width: 100%;
+    left: 0%;
+}
+
+#nav button:after {
+    content: "";
+    pointer-events: none;
+    bottom: -2px;
+    left: 50%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: #fff;
+    transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+    transition-duration: 400ms;
+    transition-property: width, left;
+}
+
+
+#titulo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 44px);
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-esquerda;
+}
+
+#titulo h3 {
+    font-size: 40px;
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-esquerda;
+
+}
+
+
+#titulo button {
+    border: none;
+    outline: none;
+    background-color: rgb(244, 244, 244);
+    padding: 10px 20px;
+    font-size: 12px;
+    font-weight: 700;
+    color: black;
+    border-radius: 5px;
+    transition: all ease 0.1s;
+    box-shadow: 0px 5px 0px 0px rgb(211, 211, 211);
+    padding-top: 6px;
+    padding-bottom: 6px;
+    padding-left: 30px;
+    padding-right: 30px;
+    border: none;
+    border-radius: 20px;
+}
+
+#titulo button:active {
+    transform: translateY(5px);
+    box-shadow: 0px 0px 0px 0px rgb(227, 227, 227);
+}
+
+
+/* ------------------------------------- HEADER --------------------------------- */
+
+
+.card-danca {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.3s ease-in;
+}
+
+.card-danca:hover {
+    transform: scale(1.090);
+}
+
+
+.card-danca-baixo{
+    height: 100%;
+    animation-duration: 1s;
+}
+
+.img {
+    background-image: url("/static/breaking_breakdance_jogos_de_paris.jpg");
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: 2px solid black;
+}
+
+.textos {
+    padding: 15px;
+    text-align: center;
+}
+
+
+main {
+    font-family: 'Quicksand', sans-serif;
+}
+
+
+button {
+    --button_radius: 0.75em;
+    --button_color: #e8e8e8;
+    --button_outline_color: #000000;
+    font-size: 17px;
+    font-weight: bold;
+    border: none;
+    border-radius: var(--button_radius);
+    background: black;
+}
+
+.button_top {
+    display: block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.75em 1.5em;
+    background: white;
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    transform: translateY(0);
+}
+
+
+@media (max-width: 767px){
+    #nav{
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 555px){
+    #titulo h3{
+        text-align: center;
+    }
+}
+
+
+.gif{
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-esquerda;
+    height: 100%;
+}
+
+.escrita{
+    position: relative;
+    animation-duration: 1s;
+    animation-name: entrada-direita;
+}
+
+.card-danca2 {
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 4px 4px 30px 0px rgba(0, 0, 0, 0.25);
+    height: 100%;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: 0 auto;
+    transition: 0.3s ease-in;
+}
+
+.card-danca2:hover {
+    transform: scale(1.080);
+}
+
+.img2 {
+    background-image: url(img/break-dance-instrutor.png);
+    width: 100%;
+    height: 250px;
+    background-size: cover;
+    border-radius: 30px 30px 0px 0px;
+    border-bottom: 2px solid black;
+}
+
+.textos2 {
+    padding: 15px;
+    text-align: center;
+}
+
+#videos{
+    transition: 0.3s ease-in;
+}
+
+#videos:hover{
+    transform: scale(1.080);
+}
+
+
+/* ------------------------------------- KEY FRAMES ------------------------------------- */
+
+@keyframes entrada-esquerda{
+    0%{
+        right: 500px;
+    }
+    100%{
+        right: 0px;
+    }
+}
+
+@keyframes entrada-direita{
+    0%{
+        left: 500px;
+    }
+    100%{
+        left: 0px;
+    }
+}
+
+
+@keyframes entrada-cima{
+    0%{
+        height: 0%;
+    }
+    100%{
+        height: 100%;
+    }
+}
+
+
+
+@keyframes entrada-baixo{
+    0%{
+        height: 100%;
+    }
+    100%{
+        height: 0%;
+    }
+}
