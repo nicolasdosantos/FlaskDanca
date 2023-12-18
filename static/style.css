@@ -20,7 +20,7 @@ a {
 
 /* ------------------------------------- HEADER --------------------------------- */
 
-header {
+.header {
     background-image: url("/static/imagem.svg");
     background-size: cover;
     height: 100vh;
@@ -29,7 +29,7 @@ header {
     font-family: 'Grandstander', cursive;
 }
 
-header h3 {
+.header h3 {
     font-family: 'Grandstander', cursive;
     font-size: 100px;
 }
@@ -105,17 +105,13 @@ header h3 {
     border: none;
     outline: none;
     background-color: rgb(244, 244, 244);
-    padding: 10px 20px;
+    padding: 0px 20px;
     font-size: 12px;
     font-weight: 700;
     color: black;
     border-radius: 5px;
     transition: all ease 0.1s;
     box-shadow: 0px 5px 0px 0px rgb(211, 211, 211);
-    padding-top: 6px;
-    padding-bottom: 6px;
-    padding-left: 30px;
-    padding-right: 30px;
     border: none;
     border-radius: 20px;
 }
